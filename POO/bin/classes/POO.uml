@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_eUuFwPCnEeyoppZaWD6-VQ" name="POO">
+    <eAnnotations xmi:id="_gsMTcPCnEeyoppZaWD6-VQ" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_gsMTcfCnEeyoppZaWD6-VQ" source="codegen">
+        <details xmi:id="_gsMTcvCnEeyoppZaWD6-VQ" key="codegenDirectory" value="/POO/src"/>
+        <details xmi:id="_gvbNoPCnEeyoppZaWD6-VQ" key="AssociatedSourceCode" value="/POO/src/classes/ContaCorrente.java;3039312172/1;/POO/src/classes/ContaBancaria.java;3857158000/1;/POO/src/classes/ContaPoupanca.java;325132908/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_gryq0PCnEeyoppZaWD6-VQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_gr1HEPCnEeyoppZaWD6-VQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_gr1HEfCnEeyoppZaWD6-VQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_gr1HEvCnEeyoppZaWD6-VQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_gr1HE_CnEeyoppZaWD6-VQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_gr1HFPCnEeyoppZaWD6-VQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_gr1HFfCnEeyoppZaWD6-VQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_gr1HFvCnEeyoppZaWD6-VQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_gr2VMPCnEeyoppZaWD6-VQ">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_gr9p8PCnEeyoppZaWD6-VQ" name="classes">
+      <packagedElement xmi:type="uml:Class" xmi:id="_gsAtQPCnEeyoppZaWD6-VQ" name="ContaCorrente">
+        <generalization xmi:id="_gsaV4PCnEeyoppZaWD6-VQ" general="_gsWEcPCnEeyoppZaWD6-VQ"/>
+        <ownedAttribute xmi:id="_gsa88PCnEeyoppZaWD6-VQ" name="limite">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_gsWEcPCnEeyoppZaWD6-VQ" name="ContaBancaria" isAbstract="true">
+        <ownedAttribute xmi:id="_hL5HMPCnEeyoppZaWD6-VQ" name="numeroBanco" visibility="protected">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_hL5uQfCnEeyoppZaWD6-VQ" name="numeroAgencia" visibility="protected">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_hL6VUfCnEeyoppZaWD6-VQ" name="numeroConta" visibility="protected">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_hL68YPCnEeyoppZaWD6-VQ" name="titular" visibility="protected">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_hL68YvCnEeyoppZaWD6-VQ" name="saldo" visibility="protected">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ovolcPCnEeyoppZaWD6-VQ" name="ContaPoupanca">
+        <generalization xmi:id="_ovrowPCnEeyoppZaWD6-VQ" general="_gsWEcPCnEeyoppZaWD6-VQ"/>
+        <ownedAttribute xmi:id="_ovsP0PCnEeyoppZaWD6-VQ" name="aniversario">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_gsBUUPCnEeyoppZaWD6-VQ">
+      <eAnnotations xmi:id="_gsGz4PCnEeyoppZaWD6-VQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_gsbkAPCnEeyoppZaWD6-VQ" base_Element="_gsa88PCnEeyoppZaWD6-VQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hL5uQPCnEeyoppZaWD6-VQ" base_Element="_hL5HMPCnEeyoppZaWD6-VQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hL6VUPCnEeyoppZaWD6-VQ" base_Element="_hL5uQfCnEeyoppZaWD6-VQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hL6VUvCnEeyoppZaWD6-VQ" base_Element="_hL6VUfCnEeyoppZaWD6-VQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hL68YfCnEeyoppZaWD6-VQ" base_Element="_hL68YPCnEeyoppZaWD6-VQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_hL7jcPCnEeyoppZaWD6-VQ" base_Element="_hL68YvCnEeyoppZaWD6-VQ"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_ovsP0fCnEeyoppZaWD6-VQ" base_Element="_ovsP0PCnEeyoppZaWD6-VQ"/>
+</xmi:XMI>

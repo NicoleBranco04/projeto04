@@ -1,0 +1,83 @@
+package aplicacao;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import java.awt.Window.Type;
+import java.awt.Color;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JTextField;
+
+public class FormCliente extends JFrame {
+
+	private JPanel contentPane;
+	private JTextField textidCliente;
+	private JTextField textnomecliente;
+	private JTextField textField;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					FormCliente frame = new FormCliente();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public FormCliente() {
+		setTitle("Gerenciar Clientes");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 450, 300);
+		contentPane = new JPanel();
+		contentPane.setBackground(new Color(255, 153, 153));
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblCliente = new JLabel("ID do Cliente :");
+		lblCliente.setFont(new Font("Times New Roman", Font.ITALIC, 10));
+		lblCliente.setBounds(10, 11, 65, 14);
+		contentPane.add(lblCliente);
+		
+		textidCliente = new JTextField();
+		textidCliente.setBounds(10, 30, 75, 14);
+		contentPane.add(textidCliente);
+		textidCliente.setColumns(10);
+		
+		JLabel lblNomeCliente = new JLabel("Nome do Cliente:");
+		lblNomeCliente.setFont(new Font("Times New Roman", Font.ITALIC, 10));
+		lblNomeCliente.setBounds(10, 55, 82, 14);
+		contentPane.add(lblNomeCliente);
+		
+		textnomecliente = new JTextField();
+		textnomecliente.setFont(new Font("Times New Roman", Font.ITALIC, 10));
+		textnomecliente.setBounds(10, 80, 207, 20);
+		contentPane.add(textnomecliente);
+		textnomecliente.setColumns(10);
+		
+		JLabel lblEmail = new JLabel("E-Mail:");
+		lblEmail.setFont(new Font("Times New Roman", Font.ITALIC, 10));
+		lblEmail.setBounds(10, 111, 46, 14);
+		contentPane.add(lblEmail);
+		
+		textField = new JTextField();
+		textField.setFont(new Font("Times New Roman", Font.ITALIC, 11));
+		textField.setBounds(10, 132, 207, 20);
+		contentPane.add(textField);
+		textField.setColumns(10);
+	}
+}
